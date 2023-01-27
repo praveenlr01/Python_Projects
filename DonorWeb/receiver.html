@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="praveenkumarlr" />
+    <meta
+      name="description"
+      content="Welcome to Bloodonor this Web page is about Blood Receiver Search page.Enter the details to search. . "
+    />
+    <title>Receiver-bd</title>
+    <link rel="icon" href="images/blood.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/receive.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header__h1">Donor<sup>lr</sup></h1>
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <article class="main__article-receiver">
+        <h2 class="main__h2 center">
+          Hope! <span class="nowrap">You will Find🩸</span>
+        </h2>
+        <form class="main__form">
+          <fieldset>
+            <legend class="offscreen">Receiver Details</legend>
+            <p>
+              <label class="label__form" for="Bloodgroup">Blood Group: </label>
+              <input
+                class="input__form"
+                type="text"
+                id="Bloodgroup"
+                name="BloodGroup"
+                list="BG"
+                autofocus
+                required
+              />
+              <datalist id="BG">
+                <option value="O+"></option>
+                <option value="O-"></option>
+                <option value="A+"></option>
+                <option value="A-"></option>
+                <option value="B+"></option>
+                <option value="B-"></option>
+                <option value="AB+"></option>
+                <option value="AB-"></option>
+              </datalist>
+            </p>
+            <p>
+              <label class="label__form" for="State">State: </label>
+              <input
+                class="input__form"
+                type="text"
+                id="State"
+                name="state"
+                required
+              />
+            </p>
+            <p>
+              <label class="label__form" for="City">City: </label>
+              <input class="input__form" type="text" id="City" name="City" />
+            </p>
+            <p>
+              <button class="button__form" id="receive_btn" type="submit">Search</button>
+              <button class="button__form" type="reset">Reset</button>
+            </p>
+          </fieldset>
+        </form>
+        <p class="details">&nbsp;</p>
+      </article>
+    </main>
+    <footer class="footer">
+      <p>CopyRights&copy; 2022Praveenkumarlr</p>
+      <p>Name:Praveen kumar L R</p>
+      <address>
+        Address: 10,c; lr manikkam road; Bharathipuram; Dharmapuri.
+        Pincode:636705
+      </address>
+      <p>Phone: <a href="tel:+919597584935" class="footer__a">9597584935</a></p>
+    </footer>
+  </body>
+</html>

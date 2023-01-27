@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="praveenkumarlr" />
+    <meta
+      name="description"
+      content="Welcome to Bloodonor this Web page is about Blood donation Form page.Enter your details . "
+    />
+    <title>Form-bd</title>
+    <link rel="icon" href="images/blood.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header__h1">Donor<sup>lr</sup></h1>
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="receiver.html">Receiver</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <article class="main__article-create">
+        <h2 class="main__h2 center h2__create">BloodDonor🩸 Form Page</h2>
+        <form class="main__form">
+          <fieldset class="fieldset__create">
+            <legend class="offscreen">CREATE ACCOUNT FOR DONATION</legend>
+            <p>
+              <label class="label__form" for="cname">Name: </label>
+              <input
+                class="input__form"
+                type="text"
+                id="cname"
+                name="Name"
+                placeholder="eg.praveen"
+                autofocus
+                required
+              />
+            </p>
+            <p>
+              <label class="label__form" for="age">Age: </label>
+              <input
+                class="input__form"
+                type="number"
+                id="age"
+                name="Age"
+                min="18"
+                max="120"
+                step="1"
+                value="23"
+                required
+              />
+            </p>
+            <p>
+              <label class="label__form" for="phone">Phone: </label>
+              <input
+                class="input__form"
+                type="tel"
+                id="phone"
+                name="PhoneNO"
+                pattern="[0-9]{10}"
+                placeholder="*10 digit"
+                required
+              />
+            </p>
+            <p>
+              <label class="label__form" for="email">Email: </label>
+              <input
+                class="input__form"
+                type="email"
+                id="email"
+                name="Email"
+                placeholder="@gmail.com"
+              />
+            </p>
+            <p>
+              <label class="label__form" for="state">State: </label>
+              <input
+                class="input__form"
+                type="text"
+                id="state"
+                name="State"
+                placeholder="eg.Tamilnadu"
+                required
+              />
+            </p>
+
+            <p>
+              <label class="label__form" for="city">City: </label>
+              <input
+                class="input__form"
+                type="text"
+                id="city"
+                name="City"
+                placeholder="eg.Dharmapuri"
+                required
+              />
+            </p>
+            <p>
+              <label class="label__form" for="bloodgroup">BloodGroup: </label>
+              <input
+                class="input__form"
+                type="text"
+                id="bloodgroup"
+                name="BloodGroup"
+                list="bg"
+              />
+              <datalist id="bg">
+                <option value="O+"></option>
+                <option value="O-"></option>
+                <option value="A+"></option>
+                <option value="A-"></option>
+                <option value="B+"></option>
+                <option value="B+"></option>
+                <option value="AB+"></option>
+                <option value="AB-"></option>
+              </datalist>
+            </p>
+            <p>
+              Hereby,I declare that
+              <span class="nowrap">Iam willing to donate blood</span>
+            </p>
+            <p>
+              <input
+                class="input__form"
+                type="checkbox"
+                id="agree"
+                name="terms"
+                value="I agree"
+              />
+              <label for="agree">I Agree</label>
+            </p>
+            <p>
+              <button class="button__form" type="submit" id="create_btn">Create</button>
+              <button class="button__form" type="reset">Reset</button>
+            </p>
+          </fieldset>
+        </form>
+      </article>
+    </main>
+    <footer class="footer">
+      <p>CopyRights&copy; 2022Praveenkumarlr</p>
+      <p>Name:Praveen kumar L R</p>
+      <address>
+        Address: 10,c; lr manikkam road; Bharathipuram; Dharmapuri.
+        Pincode:636705
+      </address>
+      <p>Phone: <a href="tel:+919597584935" class="footer__a">9597584935</a></p>
+    </footer>
+  </body>
+</html>
